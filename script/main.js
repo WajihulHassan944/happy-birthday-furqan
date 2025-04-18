@@ -79,18 +79,13 @@ function render() {
 
   animationFrameId = requestAnimationFrame(render);
 }
-
 function initConfetti() {
-  particles = Array.from({ length: confettiCount }, createParticle);
-  render();
-
-  setTimeout(() => {
-    cancelAnimationFrame(animationFrameId); // Stop the animation
-    ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas
-    particles = []; // Reset particles
-  }, 11000); // 5 seconds
-}
-
+    particles = Array.from({ length: confettiCount }, createParticle);
+    render(); // Starts the animation loop
+  
+    // Removed setTimeout to allow infinite rendering
+  }
+  
 
 
 

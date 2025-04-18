@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+  font-family: 'Lobster', cursive;
+  color: rgba(0,0,0,0.8);
+}
+
 html {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
   margin: 0;
 }
 
@@ -49,11 +55,12 @@ body {
   position: relative;
   width: 600px;
   background: #fff;
+  text-align: justify;
 }
 
 .text-box p {
   margin: 0;
-  text-align: left;
+  text-align: justify;
 }
 
 .text-box span {
